@@ -19,14 +19,14 @@
 <body>
 
     <!-- HEADER / NAVBAR -->
-    <header class="site-header">
+        <header class="site-header">
         <div class="header-container">
             <!-- Logo -->
-            <a href="#" >
+            <a href="#">
                 <img src="images/logo.webp" alt="Aura kozmetika Logo" class="header-logo-img">
             </a>
-
-            <!-- Desktop Menu (5 items) -->
+    
+            <!-- Desktop Menu -->
             <nav class="desktop-nav">
                 <a href="#home">Főoldal</a>
                 <a href="#treatments">Kezelések</a>
@@ -34,32 +34,33 @@
                 <a href="#gallery">Galéria</a>
                 <a href="#booking">Időpontfoglalás</a>
             </nav>
-
+    
             <!-- CTA Button Desktop -->
             <div class="header-cta">
                 <a href="#booking" class="btn btn-outline btn-sm">Időpontot foglalok</a>
             </div>
-
+    
             <!-- Mobile Hamburger Button -->
             <button id="menu-btn" class="menu-toggle-btn" aria-label="Menü megnyitása">
-                <div class="hamburger-icon">
+                <div class="hamburger-icon" id="hamburger-icon">
                     <span id="bar1"></span>
                     <span id="bar2"></span>
                     <span id="bar3"></span>
                 </div>
             </button>
         </div>
-
-        <!-- Mobile Fullscreen Menu -->
-        <div id="mobile-menu" class="mobile-nav">
-            <a href="#home" class="mobile-link">Főoldal</a>
-            <a href="#treatments" class="mobile-link">Kezelések</a>
-            <a href="#about" class="mobile-link">Filozófiánk</a>
-            <a href="#gallery" class="mobile-link">Galéria</a>
-            <a href="#booking" class="mobile-link">Időpontfoglalás</a>
-            <a href="#booking" class="mobile-link btn btn-filled btn-mobile">Időpontot foglalok</a>
-        </div>
     </header>
+    
+    <!-- Mobile Fullscreen Menu -->
+    <div id="mobile-menu" class="mobile-nav">
+        <a href="#home" class="mobile-link">Főoldal</a>
+        <a href="#treatments" class="mobile-link">Kezelések</a>
+        <a href="#about" class="mobile-link">Filozófiánk</a>
+        <a href="#gallery" class="mobile-link">Galéria</a>
+        <a href="#booking" class="mobile-link">Időpontfoglalás</a>
+        <a href="#booking" class="mobile-link btn btn-filled btn-mobile">Időpontot foglalok</a>
+    </div>
+    
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
@@ -199,44 +200,44 @@
             <div id="carousel" class="carousel-container no-scrollbar">
                 
                 <!-- Slide 1 -->
-                <div class="carousel-slide">
-                    <div class="slide-media-placeholder">
-                        <span class="slide-badge">Kezelőszoba</span>
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-                    <h4 class="slide-title">Harmonikus terek</h4>
-                    <p class="slide-desc">Csendes környezet a tökéletes ellazuláshoz</p>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-slide">
-                    <div class="slide-media-placeholder">
-                        <span class="slide-badge">Hatóanyagok</span>
-                        <i class="fa-solid fa-droplet"></i>
-                    </div>
-                    <h4 class="slide-title">Prémium szérumok</h4>
-                    <p class="slide-desc">Klinikai tisztaságú, minősített termékek</p>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-slide">
-                    <div class="slide-media-placeholder">
-                        <span class="slide-badge">Arckezelés</span>
-                        <i class="fa-solid fa-spa"></i>
-                    </div>
-                    <h4 class="slide-title">Szakértő masszázsok</h4>
-                    <p class="slide-desc">Relaxáló és lifting technikák</p>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="carousel-slide">
-                    <div class="slide-media-placeholder">
-                        <span class="slide-badge">Bőrdiagnosztika</span>
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
-                    <h4 class="slide-title">Személyre szabott analízis</h4>
-                    <p class="slide-desc">Hogy tudd, mire vágyik a bőröd</p>
-                </div>
+        <div class="carousel-slide">
+            <div class="slide-media-placeholder">
+                <span class="slide-badge">Kezelőszoba</span>
+                <img src="https://images.unsplash.com/photo-1630595271375-5073a6c0638b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhJTIwaW50ZXJpb3J8ZW58MHx8MHx8fDI%3D" alt="Harmonikus terek" class="slide-img">
+            </div>
+            <h4 class="slide-title">Harmonikus terek</h4>
+            <p class="slide-desc">Csendes környezet a tökéletes ellazuláshoz</p>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+            <div class="slide-media-placeholder">
+                <span class="slide-badge">Hatóanyagok</span>
+                <img src="https://images.unsplash.com/photo-1575249142951-35b95b9bb5b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VydW1zfGVufDB8fDB8fHwy" alt="Prémium szérumok" class="slide-img">
+            </div>
+            <h4 class="slide-title">Prémium szérumok</h4>
+            <p class="slide-desc">Klinikai tisztaságú, minősített termékek</p>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <div class="slide-media-placeholder">
+                <span class="slide-badge">Arckezelés</span>
+                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFzc2FnZXxlbnwwfHwwfHx8Mg%3D%3D" alt="Szakértő masszázsok" class="slide-img">
+            </div>
+            <h4 class="slide-title">Szakértő masszázsok</h4>
+            <p class="slide-desc">Relaxáló és lifting technikák</p>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="carousel-slide">
+            <div class="slide-media-placeholder">
+                <span class="slide-badge">Bőrdiagnosztika</span>
+                <img src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2tpbiUyMGFuYWx5c2lzfGVufDB8fDB8fHwy" alt="Személyre szabott analízis" class="slide-img">
+            </div>
+            <h4 class="slide-title">Személyre szabott analízis</h4>
+            <p class="slide-desc">Hogy tudd, mire vágyik a bőröd</p>
+        </div>
 
             </div>
         </div>
