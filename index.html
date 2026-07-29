@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Kozmetika - Prémium Bőrápolás & Harmonizáció</title>
+    
+    <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Ikonok -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Saját CSS fájl -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                AURA <span class="logo-accent">KOZMETIKA</span>
+            </a>
+
+            <!-- Desktop Menu (5 items) -->
+            <nav class="desktop-nav">
+                <a href="#home">Főoldal</a>
+                <a href="#treatments">Kezelések</a>
+                <a href="#about">Filozófiánk</a>
+                <a href="#gallery">Galéria</a>
+                <a href="#booking">Időpontfoglalás</a>
+            </nav>
+
+            <!-- CTA Button Desktop -->
+            <div class="header-cta">
+                <a href="#booking" class="btn btn-outline btn-sm">Időpontot foglalok</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="menu-toggle-btn" aria-label="Menü megnyitása">
+                <div class="hamburger-icon">
+                    <span id="bar1"></span>
+                    <span id="bar2"></span>
+                    <span id="bar3"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Fullscreen Menu -->
+        <div id="mobile-menu" class="mobile-nav">
+            <a href="#home" class="mobile-link">Főoldal</a>
+            <a href="#treatments" class="mobile-link">Kezelések</a>
+            <a href="#about" class="mobile-link">Filozófiánk</a>
+            <a href="#gallery" class="mobile-link">Galéria</a>
+            <a href="#booking" class="mobile-link">Időpontfoglalás</a>
+            <a href="#booking" class="mobile-link btn btn-filled btn-mobile">Időpontot foglalok</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="glow-bg-1"></div>
+        <div class="glow-bg-2"></div>
+
+        <div class="hero-content">
+            <span class="badge">Lassulj le nálunk • Érezd a bőröd egyensúlyát</span>
+            <h1 class="hero-title">
+                Ahol a bőröd <br>
+                <span class="hero-title-italic">új életre kel</span>
+            </h1>
+            <p class="hero-text">
+                Nívós, személyre szabott kozmetikai rituálék, prémium hatóanyagok és szakértő gondoskodás egy csendes, harmonikus környezetben.
+            </p>
+            <div class="hero-actions">
+                <a href="#booking" class="btn btn-filled">Online Konzultáció & Foglalás</a>
+                <a href="#treatments" class="btn btn-outline">Kezeléseink</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SZOLGÁLTATÁSOK SZEKCIÓ -->
+    <section id="treatments" class="treatments-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Exkluzív Portfólió</span>
+                <h2 class="section-title">Kozmetikai Rituáléink</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="treatments-grid">
+                <!-- Kezelés 1 -->
+                <div class="treatment-card">
+                    <div class="treatment-info">
+                        <span class="treatment-category">Arcfiatalítás & Regeneráció</span>
+                        <h3 class="treatment-name">Aura Signature Lifting</h3>
+                        <p class="treatment-desc">
+                            Intenzív, manuális és gépi arckontúrozás, amely serkenti a természetes kollagéntermelést, kisimítja a finom vonalakat és látványosan megemeli az arcbőrt.
+                        </p>
+                    </div>
+                    <div class="treatment-footer">
+                        <span class="treatment-duration">90 perc</span>
+                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                    </div>
+                </div>
+
+                <!-- Kezelés 2 -->
+                <div class="treatment-card">
+                    <div class="treatment-info">
+                        <span class="treatment-category">Mélyhidratálás & Ragyogás</span>
+                        <h3 class="treatment-name">HydraGlow Skin Therapy</h3>
+                        <p class="treatment-desc">
+                            Többlépcsős hialuronsavas feltöltés és oxigénes hidratálás, amely azonnali, telt és harmatos megjelenést biztosít a dehidratált, fáradt bőr számára.
+                        </p>
+                    </div>
+                    <div class="treatment-footer">
+                        <span class="treatment-duration">60 perc</span>
+                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                    </div>
+                </div>
+
+                <!-- Kezelés 3 -->
+                <div class="treatment-card">
+                    <div class="treatment-info">
+                        <span class="treatment-category">Bőrmegújítás</span>
+                        <h3 class="treatment-name">Peeling & Detox</h3>
+                        <p class="treatment-desc">
+                            Kíméletes savas és enzimes peeling kezelés mélytisztító agyagpakolással kombinálva, hogy a pórusok kitisztuljanak és a bőr textúrája finomabbá váljon.
+                        </p>
+                    </div>
+                    <div class="treatment-footer">
+                        <span class="treatment-duration">75 perc</span>
+                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÓLUNK SZEKCIÓ -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- Bal oldal: kép és elegáns keret pótló elem -->
+            <div class="about-graphic-wrapper">
+                <div class="graphic-border"></div>
+                <div class="graphic-card">
+                    <span class="graphic-icon">✿</span>
+                    <h4 class="graphic-title">Harmónia & Szakértelem</h4>
+                    <p class="graphic-text">Bőrünk egészsége a belső egyensúly tükre.</p>
+                </div>
+            </div>
+
+            <!-- Jobb oldal: szöveges bemutatkozás -->
+            <div class="about-content">
+                <span class="about-subtitle">Tudatos Bőrápolás</span>
+                <h2 class="about-title">Professzionális és személyre szabott törődés</h2>
+                <p class="about-text">
+                    A kozmetika számomra nemcsak a szépségről, hanem az egészségről és az én-időről is szól. Minden kezelést alapos bőrdiagnosztikával indítunk, hogy kizárólag olyan hatóanyagokat és technológiákat alkalmazzunk, amelyekre a bőrödnek valóban szüksége van.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <p class="stat-num">Prémium</p>
+                        <p class="stat-label">Hatóanyagok</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <p class="stat-num">Egyéni</p>
+                        <p class="stat-label">Megközelítés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAROUSEL GALÉRIA SZEKCIÓ -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="gallery-header-row">
+                <div class="gallery-title-wrapper">
+                    <span class="section-subtitle">Pillanatok</span>
+                    <h2 class="section-title">A nyugalom szigete</h2>
+                </div>
+                <!-- Navigációs gombok -->
+                <div class="gallery-nav-buttons">
+                    <button id="prevBtn" class="carousel-btn" aria-label="Előző kép">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" class="carousel-btn" aria-label="Következő kép">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carousel Konténer -->
+            <div id="carousel" class="carousel-container no-scrollbar">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <div class="slide-media-placeholder">
+                        <span class="slide-badge">Kezelőszoba</span>
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="slide-title">Harmonikus terek</h4>
+                    <p class="slide-desc">Csendes környezet a tökéletes ellazuláshoz</p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-media-placeholder">
+                        <span class="slide-badge">Hatóanyagok</span>
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h4 class="slide-title">Prémium szérumok</h4>
+                    <p class="slide-desc">Klinikai tisztaságú, minősített termékek</p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-media-placeholder">
+                        <span class="slide-badge">Arckezelés</span>
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h4 class="slide-title">Szakértő masszázsok</h4>
+                    <p class="slide-desc">Relaxáló és lifting technikák</p>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-media-placeholder">
+                        <span class="slide-badge">Bőrdiagnosztika</span>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h4 class="slide-title">Személyre szabott analízis</h4>
+                    <p class="slide-desc">Hogy tudd, mire vágyik a bőröd</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- IDŐPONTFOGLALÁS & CALENDLY EMBED -->
+    <section id="booking" class="booking-section">
+        <div class="section-container">
+            <div class="text-center">
+                <span class="section-subtitle">Tervezd meg a látogatást</span>
+                <h2 class="section-title">Foglalj Időpontot</h2>
+                <div class="section-line"></div>
+                <p class="booking-intro-text">
+                    Válaszd ki az alábbi naptárban a számodra legmegfelelőbb szabad időpontot a gyors, online foglaláshoz.
+                </p>
+            </div>
+
+            <!-- Calendly közvetlen beágyazás -->
+            <div class="calendly-wrapper">
+                <!--
+                  Tipp: Cseréld ki az alábbi 'data-url' attribútumban a linket a saját Calendly eseményed linkjére!
+                  Példa: data-url="https://calendly.com/sajat-felhasznaloneved/sajat-esemenyed"
+                -->
+                <div class="calendly-inline-widget"
+                     data-url="https://calendly.com/pekdavid88/mukorom-epites"
+                     style="min-width:320px;height:700px;"
+                     data-text-color="3a2e2b"
+                     data-button-color="b1807a"
+                     data-background-color="fcf8f5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SZEKCIÓ -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Oszlop 1: Logo & Slogan -->
+            <div class="footer-column brand-column">
+                <a href="#" class="logo">
+                    AURA <span class="logo-accent">KOZMETIKA</span>
+                </a>
+                <p class="footer-text">
+                    Prémium minőségű arckezelések és rituálék a harmonikus szépségért és a bőr egészségéért.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link-btn" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link-btn" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Oszlop 2: Navigáció -->
+            <div class="footer-column">
+                <h4 class="footer-title">Linkek</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Főoldal</a></li>
+                    <li><a href="#treatments">Kezelések</a></li>
+                    <li><a href="#about">Filozófiánk</a></li>
+                    <li><a href="#gallery">Galéria</a></li>
+                    <li><a href="#booking">Időpontfoglalás</a></li>
+                </ul>
+            </div>
+
+            <!-- Oszlop 3: Nyitvatartás -->
+            <div class="footer-column">
+                <h4 class="footer-title">Nyitvatartás</h4>
+                <p class="footer-info-text">Hétfő - Péntek: 09:00 - 20:00</p>
+                <p class="footer-info-text">Szombat: Megbeszélés alapján</p>
+                <p class="footer-info-text">Vasárnap: Zárva</p>
+            </div>
+
+            <!-- Oszlop 4: Kapcsolat -->
+            <div class="footer-column">
+                <h4 class="footer-title">Kapcsolat</h4>
+                <p class="footer-info-text"><i class="fa-solid fa-location-dot footer-icon"></i> 1051 Budapest, Aura utca 4.</p>
+                <p class="footer-info-text"><i class="fa-solid fa-phone footer-icon"></i> +36 30 987 6543</p>
+                <p class="footer-info-text"><i class="fa-solid fa-envelope footer-icon"></i> info@aurakozmetika.hu</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AURA Kozmetika. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <!-- Calendly widget betöltő script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    
+    <!-- Saját JS fájl -->
+    <script src="script.js"></script>
+</body>
+</html>
