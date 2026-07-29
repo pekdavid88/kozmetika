@@ -22,8 +22,8 @@
     <header class="site-header">
         <div class="header-container">
             <!-- Logo -->
-            <a href="#" class="logo">
-                AURA <span class="logo-accent">KOZMETIKA</span>
+            <a href="#" >
+                <img src="images/logo.webp" alt="Aura kozmetika Logo" class="header-logo-img">
             </a>
 
             <!-- Desktop Menu (5 items) -->
@@ -103,7 +103,7 @@
                     </div>
                     <div class="treatment-footer">
                         <span class="treatment-duration">90 perc</span>
-                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                        <button class="treatment-book-link cal-trigger" data-cal-url="https://cal.com/david-pek-out9hf/aura-signature-lifting">Foglalás</button>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                     </div>
                     <div class="treatment-footer">
                         <span class="treatment-duration">60 perc</span>
-                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                        <button class="treatment-book-link cal-trigger" data-cal-url="https://cal.com/david-pek-out9hf/hydraglow-skin-therapy">Foglalás</button>
                     </div>
                 </div>
 
@@ -133,12 +133,13 @@
                     </div>
                     <div class="treatment-footer">
                         <span class="treatment-duration">75 perc</span>
-                        <a href="#booking" class="treatment-book-link">Foglalás</a>
+                        <button class="treatment-book-link cal-trigger" data-cal-url="https://cal.com/david-pek-out9hf/peeling-detox">Foglalás</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- RÓLUNK SZEKCIÓ -->
     <section id="about" class="about-section">
@@ -241,7 +242,7 @@
         </div>
     </section>
 
-    <!-- IDŐPONTFOGLALÁS & CALENDLY EMBED -->
+    <!-- IDŐPONTFOGLALÁS -->
     <section id="booking" class="booking-section">
         <div class="section-container">
             <div class="text-center">
@@ -249,23 +250,17 @@
                 <h2 class="section-title">Foglalj Időpontot</h2>
                 <div class="section-line"></div>
                 <p class="booking-intro-text">
-                    Válaszd ki az alábbi naptárban a számodra legmegfelelőbb szabad időpontot a gyors, online foglaláshoz.
+                    Válaszd ki az alábbi naptárban a számodra legmegfelelőbb szabad időpontot.
                 </p>
             </div>
-
-            <!-- Calendly közvetlen beágyazás -->
+    
             <div class="calendly-wrapper">
-                <!--
-                  Tipp: Cseréld ki az alábbi 'data-url' attribútumban a linket a saját Calendly eseményed linkjére!
-                  Példa: data-url="https://calendly.com/sajat-felhasznaloneved/sajat-esemenyed"
-                -->
-                <div class="calendly-inline-widget"
-                     data-url="https://calendly.com/pekdavid88/mukorom-epites"
-                     style="min-width:320px;height:700px;"
-                     data-text-color="3a2e2b"
-                     data-button-color="b1807a"
-                     data-background-color="fcf8f5">
-                </div>
+                <!-- Alapértelmezett iframe (pl. az első kezelés vagy az általános profil hivatkozásával) -->
+                <iframe id="cal-iframe"
+                        src="https://cal.com/david-pek-out9hf/aura-signature-lifting"
+                        style="width:100%; height:700px; border:none;"
+                        title="Időpontfoglalás">
+                </iframe>
             </div>
         </div>
     </section>
@@ -275,9 +270,8 @@
         <div class="footer-container">
             <!-- Oszlop 1: Logo & Slogan -->
             <div class="footer-column brand-column">
-                <a href="#" class="logo">
-                    AURA <span class="logo-accent">KOZMETIKA</span>
-                </a>
+                
+                <img src="images/logo.webp" alt="Aura kozmetika Logo" class="footer-logo-img">
                 <p class="footer-text">
                     Prémium minőségű arckezelések és rituálék a harmonikus szépségért és a bőr egészségéért.
                 </p>
@@ -330,5 +324,31 @@
     
     <!-- Saját JS fájl -->
     <script src="script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const calTriggers = document.querySelectorAll('.cal-trigger');
+    const calIframe = document.getElementById('cal-iframe');
+    const bookingSection = document.getElementById('booking');
+
+    calTriggers.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // 1. Lekérjük a gombhoz tartozó Cal.com URL-t
+            const newUrl = button.getAttribute('data-cal-url');
+            
+            // 2. Ha eltér a jelenlegitől, kicseréljük az iframe forrását
+            if (calIframe && newUrl && calIframe.src !== newUrl) {
+                calIframe.src = newUrl;
+            }
+
+            // 3. Finom görgetés az időpontfoglaló szekcióhoz
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

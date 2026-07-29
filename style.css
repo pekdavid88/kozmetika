@@ -153,6 +153,14 @@ a {
     align-items: center;
 }
 
+/* Fejléc Logó Kép Stílusai */
+.header-logo-img {
+  max-height: 48px; /* Tetszőlegesen állítható magasság (pl. 40px - 55px) */
+  width: auto;      /* Megtartja az eredeti képarányt */
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
 .logo {
     font-family: var(--font-serif);
     font-size: 1.35rem;
@@ -729,6 +737,17 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: rgba(58, 46, 43, 0.4);
+}
+
+.footer-logo-img {
+  height: 100px;        /* max-height helyett fix height! */
+  width: auto;         /* Automatikus szélesség a képarány megőrzéséhez */
+  max-width: 100%;     /* Megakadályozza, hogy túllógjon a konténeren */
+  object-fit: contain; /* Garantálja, hogy a kép ne torzuljon el */
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* ==========================================
